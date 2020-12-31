@@ -5,14 +5,22 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.ufps.springboot.di.app.models.service.MiServicio;
+import com.ufps.springboot.di.app.models.service.IServicio;
 
 @Controller
 public class IndexController {
 	
 	@Autowired
-	private MiServicio servicio;
+	private IServicio servicio;
 	
+	/*
+	@Autowired
+	public IndexController(IServicio servicio) {
+		this.servicio = servicio;
+	}
+	*/
+
+
 	@GetMapping({"/","","/index"})
 	public String index(Model model) {
 		model.addAttribute("objeto", servicio.operacion());
@@ -21,5 +29,16 @@ public class IndexController {
 		
 		
 	}
+
+
+	/*
+	@Autowired
+	public void setServicio(IServicio servicio) {
+		this.servicio = servicio;
+	}
+	*/
+	
+
+
 
 }
