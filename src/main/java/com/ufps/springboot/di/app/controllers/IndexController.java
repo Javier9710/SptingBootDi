@@ -12,8 +12,8 @@ import com.ufps.springboot.di.app.models.service.IServicio;
 public class IndexController {
 	
 	@Autowired
-	//@Qualifier("miServicioComplejo")
-	@Qualifier("miServicioSimple")
+	@Qualifier("miServicioComplejo")
+	//@Qualifier("miServicioSimple")
 	private IServicio servicio;
 	
 	/*

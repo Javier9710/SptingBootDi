@@ -3,7 +3,7 @@ package com.ufps.springboot.di.app.models.service;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
-@Service("miServicioSimple")
+//@Service("miServicioSimple")
 //@Primary
 public class MiServicio implements IServicio {
 	
