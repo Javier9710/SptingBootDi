@@ -1,4 +1,4 @@
-package com.ufps.springboot.di.app.controllers;
+ package com.ufps.springboot.di.app.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
